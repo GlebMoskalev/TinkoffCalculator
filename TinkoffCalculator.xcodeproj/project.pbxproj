@@ -10,24 +10,63 @@
 		04C274272BA5F13500FB5237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274262BA5F13500FB5237 /* AppDelegate.swift */; };
 		04C274292BA5F13500FB5237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274282BA5F13500FB5237 /* SceneDelegate.swift */; };
 		04C2742B2BA5F13500FB5237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2742A2BA5F13500FB5237 /* ViewController.swift */; };
-		04C2742E2BA5F13500FB5237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2742C2BA5F13500FB5237 /* Main.storyboard */; };
 		04C274302BA5F13600FB5237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C2742F2BA5F13600FB5237 /* Assets.xcassets */; };
 		04C274332BA5F13600FB5237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C274312BA5F13600FB5237 /* LaunchScreen.storyboard */; };
+		04C2743C2BA5F23D00FB5237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2743A2BA5F23D00FB5237 /* Main.storyboard */; };
+		04C274442BA5F47600FB5237 /* TinkoffCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274432BA5F47600FB5237 /* TinkoffCalculatorUITests.swift */; };
+		04C274462BA5F47600FB5237 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274452BA5F47600FB5237 /* TinkoffCalculatorUITestsLaunchTests.swift */; };
+		04C274532BA5F48700FB5237 /* TinkoffCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274522BA5F48700FB5237 /* TinkoffCalculatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04C274472BA5F47600FB5237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C2741B2BA5F13500FB5237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C274222BA5F13500FB5237;
+			remoteInfo = TinkoffCalculator;
+		};
+		04C274542BA5F48700FB5237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C2741B2BA5F13500FB5237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C274222BA5F13500FB5237;
+			remoteInfo = TinkoffCalculator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04C274232BA5F13500FB5237 /* TinkoffCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C274262BA5F13500FB5237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C274282BA5F13500FB5237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04C2742A2BA5F13500FB5237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04C2742D2BA5F13500FB5237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04C2742F2BA5F13600FB5237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C274322BA5F13600FB5237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C274342BA5F13600FB5237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C2743B2BA5F23D00FB5237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../Calculator/Calculator/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C274412BA5F47600FB5237 /* TinkoffCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkoffCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C274432BA5F47600FB5237 /* TinkoffCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorUITests.swift; sourceTree = "<group>"; };
+		04C274452BA5F47600FB5237 /* TinkoffCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04C274502BA5F48700FB5237 /* TinkoffCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkoffCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C274522BA5F48700FB5237 /* TinkoffCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04C274202BA5F13500FB5237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C2743E2BA5F47600FB5237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C2744D2BA5F48700FB5237 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				04C274252BA5F13500FB5237 /* TinkoffCalculator */,
+				04C274422BA5F47600FB5237 /* TinkoffCalculatorUITests */,
+				04C274512BA5F48700FB5237 /* TinkoffCalculatorTests */,
 				04C274242BA5F13500FB5237 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				04C274232BA5F13500FB5237 /* TinkoffCalculator.app */,
+				04C274412BA5F47600FB5237 /* TinkoffCalculatorUITests.xctest */,
+				04C274502BA5F48700FB5237 /* TinkoffCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +99,32 @@
 		04C274252BA5F13500FB5237 /* TinkoffCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				04C2743A2BA5F23D00FB5237 /* Main.storyboard */,
 				04C274262BA5F13500FB5237 /* AppDelegate.swift */,
 				04C274282BA5F13500FB5237 /* SceneDelegate.swift */,
 				04C2742A2BA5F13500FB5237 /* ViewController.swift */,
-				04C2742C2BA5F13500FB5237 /* Main.storyboard */,
 				04C2742F2BA5F13600FB5237 /* Assets.xcassets */,
 				04C274312BA5F13600FB5237 /* LaunchScreen.storyboard */,
 				04C274342BA5F13600FB5237 /* Info.plist */,
 			);
 			path = TinkoffCalculator;
+			sourceTree = "<group>";
+		};
+		04C274422BA5F47600FB5237 /* TinkoffCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04C274432BA5F47600FB5237 /* TinkoffCalculatorUITests.swift */,
+				04C274452BA5F47600FB5237 /* TinkoffCalculatorUITestsLaunchTests.swift */,
+			);
+			path = TinkoffCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		04C274512BA5F48700FB5237 /* TinkoffCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				04C274522BA5F48700FB5237 /* TinkoffCalculatorTests.swift */,
+			);
+			path = TinkoffCalculatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +147,42 @@
 			productReference = 04C274232BA5F13500FB5237 /* TinkoffCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		04C274402BA5F47600FB5237 /* TinkoffCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C274492BA5F47600FB5237 /* Build configuration list for PBXNativeTarget "TinkoffCalculatorUITests" */;
+			buildPhases = (
+				04C2743D2BA5F47600FB5237 /* Sources */,
+				04C2743E2BA5F47600FB5237 /* Frameworks */,
+				04C2743F2BA5F47600FB5237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C274482BA5F47600FB5237 /* PBXTargetDependency */,
+			);
+			name = TinkoffCalculatorUITests;
+			productName = TinkoffCalculatorUITests;
+			productReference = 04C274412BA5F47600FB5237 /* TinkoffCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		04C2744F2BA5F48700FB5237 /* TinkoffCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C274562BA5F48700FB5237 /* Build configuration list for PBXNativeTarget "TinkoffCalculatorTests" */;
+			buildPhases = (
+				04C2744C2BA5F48700FB5237 /* Sources */,
+				04C2744D2BA5F48700FB5237 /* Frameworks */,
+				04C2744E2BA5F48700FB5237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C274552BA5F48700FB5237 /* PBXTargetDependency */,
+			);
+			name = TinkoffCalculatorTests;
+			productName = TinkoffCalculatorTests;
+			productReference = 04C274502BA5F48700FB5237 /* TinkoffCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +195,14 @@
 				TargetAttributes = {
 					04C274222BA5F13500FB5237 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					04C274402BA5F47600FB5237 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 04C274222BA5F13500FB5237;
+					};
+					04C2744F2BA5F48700FB5237 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 04C274222BA5F13500FB5237;
 					};
 				};
 			};
@@ -116,6 +220,8 @@
 			projectRoot = "";
 			targets = (
 				04C274222BA5F13500FB5237 /* TinkoffCalculator */,
+				04C274402BA5F47600FB5237 /* TinkoffCalculatorUITests */,
+				04C2744F2BA5F48700FB5237 /* TinkoffCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +233,21 @@
 			files = (
 				04C274332BA5F13600FB5237 /* LaunchScreen.storyboard in Resources */,
 				04C274302BA5F13600FB5237 /* Assets.xcassets in Resources */,
-				04C2742E2BA5F13500FB5237 /* Main.storyboard in Resources */,
+				04C2743C2BA5F23D00FB5237 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C2743F2BA5F47600FB5237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C2744E2BA5F48700FB5237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,23 +264,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04C2743D2BA5F47600FB5237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C274462BA5F47600FB5237 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */,
+				04C274442BA5F47600FB5237 /* TinkoffCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C2744C2BA5F48700FB5237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C274532BA5F48700FB5237 /* TinkoffCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		04C2742C2BA5F13500FB5237 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04C2742D2BA5F13500FB5237 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		04C274482BA5F47600FB5237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C274222BA5F13500FB5237 /* TinkoffCalculator */;
+			targetProxy = 04C274472BA5F47600FB5237 /* PBXContainerItemProxy */;
 		};
+		04C274552BA5F48700FB5237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C274222BA5F13500FB5237 /* TinkoffCalculator */;
+			targetProxy = 04C274542BA5F48700FB5237 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		04C274312BA5F13600FB5237 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				04C274322BA5F13600FB5237 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04C2743A2BA5F23D00FB5237 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C2743B2BA5F23D00FB5237 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,6 +491,76 @@
 			};
 			name = Release;
 		};
+		04C2744A2BA5F47600FB5237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCSQ238W8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebmoskalev.TinkoffCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinkoffCalculator;
+			};
+			name = Debug;
+		};
+		04C2744B2BA5F47600FB5237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCSQ238W8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebmoskalev.TinkoffCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinkoffCalculator;
+			};
+			name = Release;
+		};
+		04C274572BA5F48700FB5237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCSQ238W8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebmoskalev.TinkoffCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinkoffCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TinkoffCalculator";
+			};
+			name = Debug;
+		};
+		04C274582BA5F48700FB5237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCSQ238W8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebmoskalev.TinkoffCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinkoffCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TinkoffCalculator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +578,24 @@
 			buildConfigurations = (
 				04C274382BA5F13600FB5237 /* Debug */,
 				04C274392BA5F13600FB5237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C274492BA5F47600FB5237 /* Build configuration list for PBXNativeTarget "TinkoffCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C2744A2BA5F47600FB5237 /* Debug */,
+				04C2744B2BA5F47600FB5237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C274562BA5F48700FB5237 /* Build configuration list for PBXNativeTarget "TinkoffCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C274572BA5F48700FB5237 /* Debug */,
+				04C274582BA5F48700FB5237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
