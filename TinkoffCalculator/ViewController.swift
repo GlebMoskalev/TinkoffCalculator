@@ -112,6 +112,16 @@ class ViewController: UIViewController {
             }
     }
     
+    @IBAction func showCalculationsList(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let calculationListVC = sb.instantiateViewController(identifier: "CalculationsListViewController")
+        if let vc = calculationListVC as? CalculationListViewController{
+            vc.result = label.text
+        }
+        
+        show(calculationListVC, sender: self)
+    }
+    
     @IBAction func unwindAction(unwindSeque: UIStoryboardSegue){
         
     }

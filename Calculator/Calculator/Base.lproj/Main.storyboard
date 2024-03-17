@@ -220,7 +220,7 @@
                                     <imageReference key="image" image="clock" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="RDA-9m-XR7" kind="show" identifier="CALCULATIONS_LIST" id="pTg-8U-lG9"/>
+                                    <action selector="showCalculationsList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DS-qS-JNS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -310,34 +310,33 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="j1B-vd-eOT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="48" y="-2"/>
         </scene>
         <!--Calculation List View Controller-->
         <scene sceneID="Fbf-8c-jqa">
             <objects>
-                <viewController id="RDA-9m-XR7" customClass="CalculationListViewController" customModule="TinkoffCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculationsListViewController" id="RDA-9m-XR7" customClass="CalculationListViewController" customModule="TinkoffCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ST4-79-6vd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krq-2n-Ugg">
-                                <rect key="frame" x="207" y="443" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-IR-geS">
-                                <rect key="frame" x="162" y="547.5" width="90.5" height="35"/>
+                                <rect key="frame" x="162" y="552.5" width="90.5" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Закрыть"/>
                                 <connections>
-                                    <segue destination="j1B-vd-eOT" kind="unwind" unwindAction="unwindActionWithUnwindSeque:" id="S7j-EH-AeX"/>
+                                    <action selector="dismisVC:" destination="RDA-9m-XR7" eventType="touchUpInside" id="0Tb-ew-FEQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-Ir-cpi">
-                                <rect key="frame" x="165" y="389.5" width="84" height="21"/>
+                                <rect key="frame" x="165" y="394.5" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
