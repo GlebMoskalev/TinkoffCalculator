@@ -110,8 +110,20 @@ class ViewController: UIViewController {
                 label.text = buttonText
                 return
             }
-            
     }
+    
+    @IBAction func unwindAction(unwindSeque: UIStoryboardSegue){
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "CALCULATIONS_LIST",
+              let calculationListVC = segue.destination as? CalculationListViewController
+        else { return }
+        
+        calculationListVC.result = label.text
+    }
+    
     @IBAction func operationButtonPressed(_ sender: UIButton) {
             guard
                 let buttonText = sender.currentTitle,

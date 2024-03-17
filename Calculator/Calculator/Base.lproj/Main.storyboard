@@ -220,7 +220,7 @@
                                     <imageReference key="image" image="clock" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="RDA-9m-XR7" kind="show" id="pTg-8U-lG9"/>
+                                    <segue destination="RDA-9m-XR7" kind="show" identifier="CALCULATIONS_LIST" id="pTg-8U-lG9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -310,6 +310,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="j1B-vd-eOT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="48" y="-2"/>
         </scene>
@@ -321,8 +322,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="История вычислений" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krq-2n-Ugg">
-                                <rect key="frame" x="122" y="432.5" width="170" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krq-2n-Ugg">
+                                <rect key="frame" x="207" y="443" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-IR-geS">
+                                <rect key="frame" x="162" y="547.5" width="90.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Закрыть"/>
+                                <connections>
+                                    <segue destination="j1B-vd-eOT" kind="unwind" unwindAction="unwindActionWithUnwindSeque:" id="S7j-EH-AeX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-Ir-cpi">
+                                <rect key="frame" x="165" y="389.5" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -332,10 +347,17 @@
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="krq-2n-Ugg" firstAttribute="centerX" secondItem="ST4-79-6vd" secondAttribute="centerX" id="7Ec-ki-g0S"/>
+                            <constraint firstItem="DoD-IR-geS" firstAttribute="centerX" secondItem="ST4-79-6vd" secondAttribute="centerX" id="J74-Bj-5Lc"/>
                             <constraint firstItem="krq-2n-Ugg" firstAttribute="centerY" secondItem="ST4-79-6vd" secondAttribute="centerY" id="cMv-Wr-zO0"/>
+                            <constraint firstItem="krq-2n-Ugg" firstAttribute="top" secondItem="8hg-Ir-cpi" secondAttribute="bottom" constant="32.5" id="pME-P4-Wpq"/>
+                            <constraint firstItem="DoD-IR-geS" firstAttribute="top" secondItem="krq-2n-Ugg" secondAttribute="bottom" constant="104.5" id="uXD-FA-hGB"/>
+                            <constraint firstItem="8hg-Ir-cpi" firstAttribute="centerX" secondItem="ST4-79-6vd" secondAttribute="centerX" id="zIX-qr-faf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nZv-4W-Hd7"/>
+                    <connections>
+                        <outlet property="calcualtionLabel" destination="krq-2n-Ugg" id="krQ-O5-Lgw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCe-Y3-R4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
