@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0425A8142BA6ACFE006D239E /* CalculationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425A8132BA6ACFE006D239E /* CalculationListViewController.swift */; };
 		04C274272BA5F13500FB5237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274262BA5F13500FB5237 /* AppDelegate.swift */; };
 		04C274292BA5F13500FB5237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C274282BA5F13500FB5237 /* SceneDelegate.swift */; };
 		04C2742B2BA5F13500FB5237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2742A2BA5F13500FB5237 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0425A8132BA6ACFE006D239E /* CalculationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationListViewController.swift; sourceTree = "<group>"; };
 		04C274232BA5F13500FB5237 /* TinkoffCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C274262BA5F13500FB5237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C274282BA5F13500FB5237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				04C2742F2BA5F13600FB5237 /* Assets.xcassets */,
 				04C274312BA5F13600FB5237 /* LaunchScreen.storyboard */,
 				04C274342BA5F13600FB5237 /* Info.plist */,
+				0425A8132BA6ACFE006D239E /* CalculationListViewController.swift */,
 			);
 			path = TinkoffCalculator;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0425A8142BA6ACFE006D239E /* CalculationListViewController.swift in Sources */,
 				04C2742B2BA5F13500FB5237 /* ViewController.swift in Sources */,
 				04C274272BA5F13500FB5237 /* AppDelegate.swift in Sources */,
 				04C274292BA5F13500FB5237 /* SceneDelegate.swift in Sources */,

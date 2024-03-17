@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -40,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySE-1V-SLC">
-                                <rect key="frame" x="0.0" y="333" width="310.5" height="105.5"/>
+                                <rect key="frame" x="155.5" y="333" width="155" height="105.5"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
@@ -205,11 +206,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="gPG-jx-TMR">
-                                <rect key="frame" x="20" y="241" width="374" height="72"/>
+                                <rect key="frame" x="357" y="241" width="37" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx1-bS-EgV">
+                                <rect key="frame" x="0.0" y="333" width="155.5" height="105.5"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="clock" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RDA-9m-XR7" kind="show" id="pTg-8U-lG9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
@@ -221,10 +234,12 @@
                             <constraint firstItem="izZ-fh-ai2" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="2Ii-78-tW7"/>
                             <constraint firstItem="qfW-am-fl9" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="2Xn-gc-aaC"/>
                             <constraint firstItem="ySE-1V-SLC" firstAttribute="bottom" secondItem="aq8-6E-LZ9" secondAttribute="top" id="3Re-Rt-zNp"/>
+                            <constraint firstItem="Xx1-bS-EgV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5AC-wp-eMv"/>
                             <constraint firstItem="Zk2-M1-8rh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5F7-TC-e57"/>
                             <constraint firstItem="Zk2-M1-8rh" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="5RQ-Kx-ElA"/>
                             <constraint firstItem="Fpd-VK-OAT" firstAttribute="bottom" secondItem="qfW-am-fl9" secondAttribute="top" id="8ST-Bj-l8K"/>
                             <constraint firstItem="CGI-bf-zSD" firstAttribute="leading" secondItem="izZ-fh-ai2" secondAttribute="trailing" id="99f-7s-0Qg"/>
+                            <constraint firstItem="Xx1-bS-EgV" firstAttribute="bottom" secondItem="ySE-1V-SLC" secondAttribute="bottom" id="Adh-by-3V7"/>
                             <constraint firstItem="CGI-bf-zSD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="AmE-Ls-jQx"/>
                             <constraint firstItem="Wod-C2-vFM" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="BEm-KR-dlr"/>
                             <constraint firstItem="YgZ-IT-SCn" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="CLh-Nb-hQR"/>
@@ -253,7 +268,7 @@
                             <constraint firstItem="izZ-fh-ai2" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="V1t-nZ-nO9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="fT2-GF-b0r" secondAttribute="leading" id="VRJ-89-3yb"/>
                             <constraint firstItem="CGI-bf-zSD" firstAttribute="bottom" secondItem="Ff1-JU-fSc" secondAttribute="top" id="WEZ-5v-4PA"/>
-                            <constraint firstItem="ySE-1V-SLC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YL4-At-kmw"/>
+                            <constraint firstItem="ySE-1V-SLC" firstAttribute="trailing" secondItem="Wod-C2-vFM" secondAttribute="leading" id="ZEh-Bb-IrZ"/>
                             <constraint firstItem="64O-T6-HDp" firstAttribute="leading" secondItem="aq8-6E-LZ9" secondAttribute="trailing" id="Zhv-PX-gV1"/>
                             <constraint firstItem="aq8-6E-LZ9" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="aZt-Gd-9rN"/>
                             <constraint firstItem="pA7-9T-ycm" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="atE-uR-Bys"/>
@@ -261,16 +276,15 @@
                             <constraint firstItem="Wod-C2-vFM" firstAttribute="top" secondItem="gPG-jx-TMR" secondAttribute="bottom" constant="20" id="bfS-bi-ofl"/>
                             <constraint firstItem="fT2-GF-b0r" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="c5a-KW-2s6"/>
                             <constraint firstItem="Ff1-JU-fSc" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="cIM-y1-zJD"/>
+                            <constraint firstItem="Xx1-bS-EgV" firstAttribute="height" secondItem="ySE-1V-SLC" secondAttribute="height" id="cRP-Sp-fGx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qfW-am-fl9" secondAttribute="bottom" id="cc7-Qq-HtN"/>
                             <constraint firstItem="AGb-23-r2m" firstAttribute="bottom" secondItem="YgZ-IT-SCn" secondAttribute="top" id="cda-8x-8H2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fpd-VK-OAT" secondAttribute="trailing" id="csA-uU-mrl"/>
-                            <constraint firstItem="gPG-jx-TMR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cvd-to-hUT"/>
                             <constraint firstItem="Ff1-JU-fSc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eee-KI-Knp"/>
                             <constraint firstItem="AGb-23-r2m" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="eti-kL-Iij"/>
                             <constraint firstItem="AGb-23-r2m" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="gTv-YI-LhR"/>
                             <constraint firstItem="qfW-am-fl9" firstAttribute="leading" secondItem="YgZ-IT-SCn" secondAttribute="trailing" id="ggt-aQ-RtB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="aq8-6E-LZ9" secondAttribute="leading" id="h8U-vP-C4D"/>
-                            <constraint firstItem="ySE-1V-SLC" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.75" id="iYy-wo-5mG"/>
                             <constraint firstItem="64O-T6-HDp" firstAttribute="bottom" secondItem="Ilv-7j-EUf" secondAttribute="top" id="jcg-Jr-r8p"/>
                             <constraint firstItem="64O-T6-HDp" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="jwf-5I-VlU"/>
                             <constraint firstItem="CGI-bf-zSD" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="kCb-6S-t2M"/>
@@ -283,6 +297,8 @@
                             <constraint firstItem="pA7-9T-ycm" firstAttribute="bottom" secondItem="AGb-23-r2m" secondAttribute="top" id="sKL-7B-JOj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YgZ-IT-SCn" secondAttribute="bottom" id="sVv-pF-xkl"/>
                             <constraint firstItem="fT2-GF-b0r" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="vIl-14-zmB"/>
+                            <constraint firstItem="Xx1-bS-EgV" firstAttribute="width" secondItem="ySE-1V-SLC" secondAttribute="width" id="vjZ-e6-z4Y"/>
+                            <constraint firstItem="ySE-1V-SLC" firstAttribute="leading" secondItem="Xx1-bS-EgV" secondAttribute="trailing" id="y3P-bv-gZO"/>
                             <constraint firstItem="WdL-mP-paI" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="y5z-ns-K9c"/>
                             <constraint firstItem="aq8-6E-LZ9" firstAttribute="bottom" secondItem="fT2-GF-b0r" secondAttribute="top" id="z34-kP-obG"/>
                             <constraint firstItem="Zk2-M1-8rh" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="zN3-LZ-0wN"/>
@@ -297,19 +313,51 @@
             </objects>
             <point key="canvasLocation" x="48" y="-2"/>
         </scene>
+        <!--Calculation List View Controller-->
+        <scene sceneID="Fbf-8c-jqa">
+            <objects>
+                <viewController id="RDA-9m-XR7" customClass="CalculationListViewController" customModule="TinkoffCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ST4-79-6vd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="История вычислений" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krq-2n-Ugg">
+                                <rect key="frame" x="122" y="432.5" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n7m-3i-LwM"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="krq-2n-Ugg" firstAttribute="centerX" secondItem="ST4-79-6vd" secondAttribute="centerX" id="7Ec-ki-g0S"/>
+                            <constraint firstItem="krq-2n-Ugg" firstAttribute="centerY" secondItem="ST4-79-6vd" secondAttribute="centerY" id="cMv-Wr-zO0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nZv-4W-Hd7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCe-Y3-R4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="15"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="clock" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
