@@ -93,6 +93,11 @@ class ViewController: UIViewController {
             history.removeAll()
         }
     
+        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
             guard let buttonText = sender.currentTitle else { return }
@@ -119,20 +124,9 @@ class ViewController: UIViewController {
             vc.result = label.text
         }
         
-        show(calculationListVC, sender: self)
+        navigationController?.pushViewController(calculationListVC, animated: true)
     }
     
-    @IBAction func unwindAction(unwindSeque: UIStoryboardSegue){
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "CALCULATIONS_LIST",
-              let calculationListVC = segue.destination as? CalculationListViewController
-        else { return }
-        
-        calculationListVC.result = label.text
-    }
     
     @IBAction func operationButtonPressed(_ sender: UIButton) {
             guard
